@@ -3,11 +3,8 @@ web scraping project to grab listing data and compare home prices.
 
 # Prerequisites
 - [Python](https://www.python.org)
-- [Requests](https://pypi.org/project/requests/)
-- [Pandas](https://pandas.pydata.org/docs/getting_started/install.html)
-- [BeautifulSoup](https://pypi.org/project/beautifulsoup4/)
-- [Matplotlib](https://matplotlib.org/stable/users/installing/index.html)
-- [CSV](https://pypi.org/project/python-csv/)
+- [requirements.txt](https://github.com/joytantrum/python-real-estate-scraper/blob/main/requirements.txt)
+
 
 # Set up
 download & install python 3 from the official site.
@@ -21,6 +18,8 @@ download the source code from the repository and run as a .py file.
 ```bash
   python3 MAIN_SCRAPER.py
 ```
+
+
 # How it works
 This scraper class grabs listing data from the [Marshall Walker](https://www.marshallwalker.com/) real estate agency website. I initally wrote this class to include the most popular towns in the Charleston area, but more data can be scraped by adjusting the towns parameter. 
 
@@ -55,3 +54,13 @@ To create a bar graph of the average price per square foot, call the avg_price_p
 <p align="center">
   <img src="img/Average_per_SQFT.png" width="600" title="sample">
 </p>
+
+
+# Credits
+This project uses several open source packages and libraries:
+- [Pandas](https://pandas.pydata.org/docs/getting_started/install.html)
+- [Matplotlib](https://matplotlib.org/stable/users/installing/index.html)
+- [BeautifulSoup](https://pypi.org/project/beautifulsoup4/)
+- [CSV](https://pypi.org/project/python-csv/)
+- [Requests](https://pypi.org/project/requests/)
+
