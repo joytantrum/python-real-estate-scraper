@@ -94,7 +94,7 @@ class Scraper:
         # Write scraped data to csv file
         data = self.get_data()
         df = pd.DataFrame(data, columns=['Address', 'Location', 'Price', 'Beds', 'Baths', 'Sqft'])
-        csv = df.to_csv(filename + '_listings.csv')
+        csv = df.to_csv(filename + '_listings.csv', index=False)
         return csv
 
     def get_avg_price_data(self):
