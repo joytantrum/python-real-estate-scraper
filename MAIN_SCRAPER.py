@@ -163,39 +163,29 @@ class Scraper:
 def main():
     # Function to call the class
     X = Scraper("isle of palms")
-
     # Returns page status
-    # page_status = X.get_page()
-
+    page_status = X.get_page()
     # Runs the scraper & returns the data dictionary
-    #main_scraper = X.get_data()
-
+    main_scraper = X.get_data()
     # Writes listing data to pandas dataframe
-    #main_df = X.create_dataframe()
-
+    main_df = X.create_dataframe()
     # Writes listings data to csv file
-    # csv_file = X.write_to_csv("folly beach")
-
+    csv_file = X.write_to_csv("folly beach")
     # Grabs the average data and returns the avg_data dictionary
     avg_price_vals = X.get_avg_price_data()
-    print(avg_price_vals)
-
     # Writes averages data to pandas dataframe
-    # avg_df = X.avg_dataframe()
-
+    avg_df = X.avg_dataframe()
     # Writes the average data to csv file
-    #avg_data = X.avg_data_to_csv()
-
+    avg_data = X.avg_data_to_csv()
     # Writes a new line of average data to same csv file
-    #add_avg = X.add_to_avg_csv()
-
+    add_avg = X.add_to_avg_csv()
     # Returns the graph for average prices
-    #plot = X.avg_price_graph()
-
+    plot = X.avg_price_graph()
     # Returns the graph for average prices per SQFT
-    #SQFT_plot = X.avg_price_perSQFT_graph()
+    SQFT_plot = X.avg_price_perSQFT_graph()
 
 
 
 if __name__ == '__main__':
     main()
+    
