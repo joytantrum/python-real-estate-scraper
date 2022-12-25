@@ -23,8 +23,6 @@ download the source code from the repository and run as a .py file.
 # How it works
 This scraper class grabs listing data from the [Marshall Walker](https://www.marshallwalker.com/) real estate agency website. I initally wrote this class to include the most popular towns in the Charleston area, but more data can be scraped by adjusting the towns parameter. 
 
-To fetch only the listing data, use the SIMPLE_SCRAPER.py. To fetch listing data and average data, use the MAIN_SCRAPER.py. 
-
 To scrape data from your chosen location, adjust the town parameter in the main function. 
 
 To create the pandas dataframe of your chosen location, call the create_dataframe() method. Your output should look like this:
